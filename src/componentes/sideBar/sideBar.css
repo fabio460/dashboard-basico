@@ -1,0 +1,17 @@
+.sidebar{
+    width: 20%;
+    height: 100vh;
+    background-color:rgb(42, 37, 48);
+    color: gray;
+    padding:0 25px;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+    color: white;
+}
+.titulo{
+    background-color:rgb(42, 37, 48) ;
+    color: red;
+}

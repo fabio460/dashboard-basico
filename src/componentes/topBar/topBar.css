@@ -1,0 +1,110 @@
+.topbar{
+    display: flex;
+    align-items: center;
+    padding: 20px 10px;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+}
+.menuItem{
+    cursor: pointer;
+    display: none;
+}
+.topbarLeft{
+    display: flex;
+    align-items: center;
+    flex: 2;
+}
+.topbarRight{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+}
+.bandeiraBrasil{
+    width: 25px;
+    height: 18px;
+}
+.topbarRightItens{
+    margin: 5px ;
+}
+.topbarRightItensAvatar{
+    display: flex;
+    align-items: center;
+}
+
+.topbarRightItensAvatarImagem{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 5px;
+}
+
+@media (max-width:400px) {
+    .topbar{
+        width: 94vw;
+    }
+    .menuItem{
+        display: block;
+    }
+    .CustomizedInputBase{
+        display: none;
+    }
+    .sidebar{
+       display: none;
+    }
+    .bandeiraBrasil{
+        display: none;
+    }
+    .topbarRightItensAvatarName{
+        display: none;
+    }
+    .KeyboardArrowDownIcon{
+        display: none;
+    }
+   .topbarRightItens{
+       margin: 0px 0px;
+   }
+   .topbarRight{
+       flex: 15;
+       width: 100%;
+   }
+   .topbarRightItens{
+       margin: 0;
+       padding: 0;
+       
+       width: 50px;
+   }
+   #demo-customized-button{
+
+       padding: 0;
+       margin: 0;
+       width: 50px;
+   }
+   #basic-button{
+       
+       width: 10px;
+       padding: 0px 0px;
+       margin: 0;
+     
+   }
+   #TemporaryDrawerIdButton{
+      
+       width: 10px;
+       padding: 0;
+       margin: 0;
+      
+   }
+   .TemporaryDrawerIdButtonIcon{
+    width: 10px;
+    padding: 0px;
+    margin: 0px;
+    margin-left: -20px;
+   }
+   .none{
+       display: none;
+   }
+}

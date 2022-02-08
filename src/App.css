@@ -1,0 +1,27 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.section{
+    display: flex;
+        
+}
+.appLeft{
+    flex: 1;
+    background-color: dimgray;
+    margin-left: 0px;
+}
+.appRight{
+    flex: 4;
+}
+@media (max-width:400px) {
+    .appLeft{
+        margin-left: -392px;
+        transition: 0.3s;
+        flex: 1;
+    }
+    .appRight{
+        flex: 1;
+    }
+}

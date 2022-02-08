@@ -1,0 +1,71 @@
+.home{
+    flex: 4;
+}
+.HomeContainer{
+    background-color: rgb(230, 230, 230);
+}
+.g1{
+    display: grid;
+    grid-template-columns:repeat(4,1fr);         
+    gap: 10px;
+        
+}
+.tituloHome{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.g2{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);   
+}
+.g3{
+    display: grid;
+    grid-template-columns:2fr 1fr 1fr;
+}
+.graficos{
+    background-color: white;
+    padding: 50px 5px;
+    margin: 10px;
+}
+.grafico{
+  
+  margin: 10px;
+}
+.graficos h1{
+    color: rgb(66, 66, 66);
+    font-size: 25px;
+}
+.textoGrafico{
+    text-align: center;
+    color: grey;
+}
+.precoGrafico{
+
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.HomeContainerBoxG1{
+    display: flex;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+}
+.HomeContainerG1Left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    
+}
+@media (max-width:400px) {
+    .g1,.g2,.g3{
+        grid-template-columns: 1fr;
+        width: 95%;
+        margin: auto;
+        
+    }
+}
