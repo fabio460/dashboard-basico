@@ -14,7 +14,7 @@ import './SideBar.css'
 
 import {useHistory} from 'react-router-dom'
 const background = 'rgb(37, 37, 56)'
-function NestedList_1() {
+function NestedList1() {
   
   const h = useHistory()
 
@@ -79,7 +79,7 @@ function NestedList_1() {
 }
 
 
-function NestedList_2() {
+function NestedList2() {
   const [open, setOpen] = React.useState(false);
 
   const handleClick = () => {
@@ -136,7 +136,7 @@ function NestedList_2() {
   );
 }
 
-function NestedList_3() {
+function NestedList3() {
   const [open, setOpen] = React.useState(false);
 
   const handleClick = () => {
@@ -187,9 +187,9 @@ function NestedList_3() {
 export default function NestedList(){
   return <>
      <div className='NestedList'>
-        <NestedList_1/>
-        <NestedList_2/>
-        <NestedList_3/>
+        <NestedList1/>
+        <NestedList2/>
+        <NestedList3/>
      </div>
   </>
 }
