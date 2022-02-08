@@ -141,7 +141,7 @@ const telaUsuario = ()=>{
 
             <div className='iconeMenuHeader'><SimpleBadge/></div>
             
-            <div className='iconeMenuHeader'>item</div>
+            <div className='iconeMenuHeader'></div>
 
 
             <Tooltip title="Open settings">
@@ -166,8 +166,8 @@ const telaUsuario = ()=>{
               onClose={handleCloseUserMenu}
             >
               {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
+                <MenuItem key={setting} onClick={handleCloseUserMenu} >
+                  <Typography  textAlign="center">{setting}</Typography>
                 </MenuItem>
               ))}
               
@@ -175,6 +175,7 @@ const telaUsuario = ()=>{
             <div className='iconeMenuHeader'><SwipeableTemporaryDrawer
                cadastrar={'cadastrar'}
                telaUsuario={telaUsuario} 
+               
              /></div>
           </Box>
         </Toolbar>

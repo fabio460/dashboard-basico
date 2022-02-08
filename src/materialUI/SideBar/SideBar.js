@@ -14,6 +14,7 @@ import './SideBar.css'
 
 import {useHistory} from 'react-router-dom'
 const background = 'rgb(37, 37, 56)'
+const color ='white'
 function NestedList1() {
   
   const h = useHistory()
@@ -26,7 +27,7 @@ function NestedList1() {
 
   return (
     <List
-      sx={{ width: '100%', maxWidth: 360, background: background,color:'white'}}
+      sx={{ width: '100%', maxWidth: 360, background: background,color:color}}
       component="nav"
       aria-labelledby="nested-list-subheader"
       subheader={
@@ -37,8 +38,8 @@ function NestedList1() {
     >
 
       <ListItemButton onClick={handleClick}>
-        <ListItemIcon>
-          <InboxIcon />
+        <ListItemIcon sx={{color:color}}>
+          <InboxIcon sx={{color:color}}/>
         </ListItemIcon>
         <ListItemText primary="Principal" />
         {open ? <ExpandLess /> : <ExpandMore />}
@@ -46,29 +47,29 @@ function NestedList1() {
       <Collapse in={open} timeout="auto" unmountOnExit>
         <List component="div" disablePadding>
           <ListItemButton sx={{ pl: 4 }}>
-            <ListItemIcon>
-              <StarBorder />
+            <ListItemIcon sx={{color:color}}>
+              <StarBorder sx={{color:color}}/>
             </ListItemIcon>
-            <ListItemText primary="Home" onClick={()=> h.push('/')}/>
+            <ListItemText sx={{color:color}} primary="Home" onClick={()=> h.push('/')}/>
           </ListItemButton>
 
           <ListItemButton sx={{ pl: 4 }}>
-            <ListItemIcon>
-              <StarBorder />
+            <ListItemIcon sx={{color:color}}>
+              <StarBorder sx={{color:color}}/>
             </ListItemIcon>
             <ListItemText primary="Usuarios" onClick={()=>h.push('/users')} />
           </ListItemButton>
 
           <ListItemButton sx={{ pl: 4 }}>
             <ListItemIcon>
-              <StarBorder />
+              <StarBorder sx={{color:color}}/>
             </ListItemIcon>
             <ListItemText primary="Starred" />
           </ListItemButton>
 
           <ListItemButton sx={{ pl: 4 }}>
             <ListItemIcon>
-              <StarBorder />
+              <StarBorder sx={{color:color}}/>
             </ListItemIcon>
             <ListItemText primary="Starred" />
           </ListItemButton>
@@ -88,7 +89,7 @@ function NestedList2() {
 
   return (
     <List
-      sx={{ width: '100%', maxWidth: 360, background:background,color:'white'}}
+      sx={{ width: '100%', maxWidth: 360, background:background,color:color}}
       component="nav"
       aria-labelledby="nested-list-subheader"
      
@@ -96,7 +97,7 @@ function NestedList2() {
 
       <ListItemButton onClick={handleClick}>
         <ListItemIcon>
-          <InboxIcon />
+          <InboxIcon sx={{color:color}}/>
         </ListItemIcon>
         <ListItemText primary="Inbox" />
         {open ? <ExpandLess /> : <ExpandMore />}
@@ -104,29 +105,29 @@ function NestedList2() {
       <Collapse in={open} timeout="auto" unmountOnExit>
         <List component="div" disablePadding>
           <ListItemButton sx={{ pl: 4 }}>
+            <ListItemIcon sx={{color:color}}>
+              <StarBorder sx={{color:color}}/>
+            </ListItemIcon>
+            <ListItemText primary="Starred" sx={{color:color}}/>
+          </ListItemButton>
+
+          <ListItemButton sx={{ pl: 4 }}>
+            <ListItemIcon sx={{color:color}}>
+              <StarBorder sx={{color:color}}/>
+            </ListItemIcon>
+            <ListItemText primary="Starred" sx={{color:color}} />
+          </ListItemButton>
+
+          <ListItemButton sx={{ pl: 4 }}>
             <ListItemIcon>
-              <StarBorder />
+              <StarBorder sx={{color:color}}/>
             </ListItemIcon>
             <ListItemText primary="Starred" />
           </ListItemButton>
 
           <ListItemButton sx={{ pl: 4 }}>
             <ListItemIcon>
-              <StarBorder />
-            </ListItemIcon>
-            <ListItemText primary="Starred" />
-          </ListItemButton>
-
-          <ListItemButton sx={{ pl: 4 }}>
-            <ListItemIcon>
-              <StarBorder />
-            </ListItemIcon>
-            <ListItemText primary="Starred" />
-          </ListItemButton>
-
-          <ListItemButton sx={{ pl: 4 }}>
-            <ListItemIcon>
-              <StarBorder />
+              <StarBorder sx={{color:color}}/>
             </ListItemIcon>
             <ListItemText primary="Starred" />
           </ListItemButton>
@@ -151,7 +152,7 @@ function NestedList3() {
 
       <ListItemButton onClick={handleClick}>
         <ListItemIcon>
-          <InboxIcon />
+          <InboxIcon sx={{color:color}}/>
         </ListItemIcon>
         <ListItemText primary="Inbox" />
         {open ? <ExpandLess /> : <ExpandMore />}
@@ -160,21 +161,21 @@ function NestedList3() {
         <List component="div" disablePadding>
           <ListItemButton sx={{ pl: 4 }}>
             <ListItemIcon>
-              <StarBorder />
+              <StarBorder sx={{color:color}}/>
             </ListItemIcon>
             <ListItemText primary="Starred" />
           </ListItemButton>
 
           <ListItemButton sx={{ pl: 4 }}>
             <ListItemIcon>
-              <StarBorder />
+              <StarBorder sx={{color:color}}/>
             </ListItemIcon>
             <ListItemText primary="Starred" />
           </ListItemButton>
 
           <ListItemButton sx={{ pl: 4 }}>
             <ListItemIcon>
-              <StarBorder />
+              <StarBorder sx={{color:color}}/>
             </ListItemIcon>
             <ListItemText primary="Starred" />
           </ListItemButton>
