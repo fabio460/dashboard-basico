@@ -22,10 +22,20 @@ import SwipeableTemporaryDrawer from './itens/SwipeableTemporaryDrawer';
 
 import {useHistory} from 'react-router-dom'
 
-const pages = [<div onClick={()=>alert('produtos')}>produto</div>, 'Pricing', 'Blog'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+
+
+
+
+
 
 const ResponsiveAppBar = () => {
+  const h = useHistory()
+  const Logout = ()=>{
+    h.push('/login')
+    
+  }
+  const pages = [<div onClick={()=>alert('produtos')}>produto</div>, 'Pricing', 'Blog'];
+  const settings = ['Profile', 'Account', 'Dashboard', <div onClick={Logout}>Logout</div>];
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
   const [abrir,setAbrir] = React.useState(true)
@@ -62,11 +72,12 @@ const ResponsiveAppBar = () => {
     </Badge>
   );
 }
-const h = useHistory()
+
 const telaUsuario = ()=>{
    return h.push('/users')
   
 }
+
 
   return (
     <AppBar position="static" sx={{background:'rgb(170, 214, 170)',color:'black'}} >

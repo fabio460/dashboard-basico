@@ -10,29 +10,49 @@ import {
   Link
 } from "react-router-dom";
 import Users from './paginas/users/Users';
+import Login from './paginas/login/Login';
 function App() {
   return (
     <div className="App">
        <BrowserRouter>
-       <Header/>
+       <Link to='/login'></Link>
+      
       
       <div className='section'>
-          <div className='appLeft'>
-          <SideBar />
-          </div>
-          <div className='appRight'>
-              
+
+ 
               <Link to={'/users'}></Link>
               <Switch>
                 <Route exact path="/">
-                  <Home />
+                  <Header/>
+                  <div className='container'>
+                     
+                      <div className='appLeft'>
+                        <SideBar />
+                      </div>
+                      <div className='appRight'>   
+                        <Home />
+                      </div>
+                  </div> 
                 </Route>
                 <Route path="/users">
-                  <Users/>
+                    <Header/>
+                    <div className='container'>
+                       
+                          <div className='appLeft'>
+                            <SideBar />
+                          </div>
+                          <div className='appRight'>   
+                            <Users />
+                          </div>
+                      </div> 
+                </Route>
+                <Route>
+                    <Login/>
                 </Route>
               </Switch>
           
-          </div>  
+          
       </div>
        </BrowserRouter>
     </div>

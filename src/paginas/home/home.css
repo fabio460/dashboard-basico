@@ -61,7 +61,7 @@
     width: 100%;
     
 }
-@media (max-width:400px) {
+@media (max-width:450px) {
     .g1,.g2,.g3{
         grid-template-columns: 1fr;
         width: 95%;
