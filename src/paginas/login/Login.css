@@ -1,0 +1,55 @@
+.login{
+    
+    background: rgb(13,117,48);
+    background: linear-gradient(90deg, rgba(13,117,48,1) 26%, rgba(0,212,255,1) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+.formularioLogin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 440px;
+    border-radius: 5px;
+    padding: 10px;
+    height: 500px;
+    margin-top: 50px;
+}
+h1{
+    text-align: center;
+    margin-top: 70px;
+}
+.loginTitle{
+    font-weight: 600;
+    font-size: 35px;
+}
+.checkBox{
+    
+    width: 100%;
+}
+.registroLink{
+    color: red;
+    cursor: pointer;
+}
+.registroLink:hover{
+    color: rgb(255, 108, 108);
+}
+#btn{
+    background-color: red;
+    border: solid 2ps black;
+}
+@media (max-width:450px) {
+    .formularioLogin{
+        width: 86%;
+        margin: auto;
+        margin-top: 50px;
+    }
+    .login{
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
+}
