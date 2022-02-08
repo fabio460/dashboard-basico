@@ -9,7 +9,7 @@
 }
 .appLeft{
     flex: 1;
-    background-color: dimgray;
+    
     margin-left: 0px;
 }
 .appRight{
@@ -17,9 +17,12 @@
 }
 @media (max-width:400px) {
     .appLeft{
+        position: absolute;
+        top: 58px;
         margin-left: -392px;
         transition: 0.3s;
         flex: 1;
+        
     }
     .appRight{
         flex: 1;

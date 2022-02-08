@@ -30,7 +30,7 @@ const ResponsiveAppBar = () => {
   const [anchorElUser, setAnchorElUser] = React.useState(null);
   const [abrir,setAbrir] = React.useState(true)
   const handleOpenNavMenu = (event) => {
-   setAnchorElNav(event.currentTarget);
+   //setAnchorElNav(event.currentTarget);
    setAbrir(!abrir)
    if(abrir){
     document.querySelector('.appLeft').style='margin-left: 0px;'
